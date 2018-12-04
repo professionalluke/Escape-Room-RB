@@ -8,13 +8,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ListRoomsComponent,
-    AuthComponent
+    AuthComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
