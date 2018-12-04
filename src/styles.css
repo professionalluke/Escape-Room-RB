@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    background: url(../../Escape-Room-RB/src/assets/bricks.jpg) no-repeat;
+    background-image: cover;
+    height: 100%;
+    width: 100%;
+}
