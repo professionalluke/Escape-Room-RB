@@ -1,0 +1,10 @@
+div{
+    background-color: rgba(56,85,153, .75);
+    width: 23em;
+    margin: 1em;
+}
+
+.info{
+    display: inline-block;
+
+}
