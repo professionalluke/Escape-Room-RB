@@ -1,6 +1,7 @@
 .aboutrooms{
-    
+    text-align: center;
     color: white;
+    max-width: 350px;
   }
   
   .aboutus{
@@ -16,6 +17,7 @@
   }
   h1{
       color:white;
+      text-align: center;
   }
   h2{
     color: white;
