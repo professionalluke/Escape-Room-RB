@@ -25,7 +25,9 @@ export class UserAuthComponent implements OnInit {
     })
     
     this.signUp = this.fb.group({
-
+      username: new FormControl(),
+      email: new FormControl(),
+      password: new FormControl(),
     })
   }
 
@@ -34,6 +36,6 @@ export class UserAuthComponent implements OnInit {
   }
 
   onSignUp(){
-    
+
   }
 }
