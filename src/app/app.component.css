@@ -14,10 +14,13 @@ nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #385589;
   border-radius: 4px;
   margin: .3em;
+  float: right;
+  font-size: 2em;
+ 
 }
 
 nav a:visited, a:link {
@@ -35,8 +38,9 @@ nav a.active {
 
 nav {
   background-color:#385589;
-  height: 8em;
-  width:100%;
-  padding: .5em;
-  margin:0em;
+  height: 10em;
+  padding: 0.5em;
+  margin-top:-0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }

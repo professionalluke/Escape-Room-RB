@@ -1,5 +1,4 @@
 <!-- HOME -->
-<body>
 <h1>Make yourself an ESCAPEplan.</h1>
 
 <!-- Carousel section -->
@@ -9,18 +8,29 @@
 
 <!-- Description of EscapeRooms -->
 <div class="info">
-<h2>What is an Escape Room?</h2>
-<div class="aboutrooms"><p>
-  A puzzle being solved in an escape room
-  An escape room, also known as an "escape game", is a physical adventure game in which players solve a 
-  series of puzzles and riddles using clues, hints, and strategy to complete the objectives at hand. Players
-  are given a set time limit to unveil the secret plot which is hidden within the rooms. Escape rooms are inspired 
-  by "escape-the-room"–style video games. Games are set in a variety of fictional locations, such as prison cells, 
-  dungeons, and space stations, and usually the various puzzles and riddles themselves follow the theme of the room.
-</p>
+        <mat-card class="aboutrooms">
+            <mat-card-header>
+              <div mat-card-avatar class="himage3"></div>
+              <mat-card-title>WHAT IS AN ESCAPE ROOM?</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/escape.png" class="escape" alt="room-photo">
+            <mat-card-content>
+              <p>
+                    A puzzle being solved in an escape room
+                    <!-- An escape room, also known as an "escape game", is a physical adventure game in which players solve a 
+                    series of puzzles and riddles using clues, hints, and strategy to complete the objectives at hand. Players
+                    are given a set time limit to unveil the secret plot which is hidden within the rooms. Escape rooms are inspired 
+                    by "escape-the-room"–style video games. Games are set in a variety of fictional locations, such as prison cells, 
+                    dungeons, and space stations, and usually the various puzzles and riddles themselves follow the theme of the room. -->
+                  
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>History</button>
+              <!-- <button mat-button></button> -->
+            </mat-card-actions>
+        </mat-card>
 </div>
-<br />
-
 <!-- About Us -->
 <div class="info">
     <mat-card class="aboutus">
@@ -41,6 +51,7 @@
         </mat-card-actions>
     </mat-card>
 </div>
+
 <!-- Buisness admins add? -->
 <div class="info">
 <mat-card class="admin">
@@ -61,4 +72,3 @@
         </mat-card-actions>
       </mat-card>
 </div>
-    </body>
