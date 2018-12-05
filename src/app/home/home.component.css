@@ -1,0 +1,29 @@
+.aboutrooms{
+    
+    color: white;
+  }
+  
+  .aboutus{
+    text-align: center;
+    color:white;
+    max-width: 400px
+  }
+  
+  .admin{
+    text-align: center;
+    color:white;
+    max-width: 400px
+  }
+  h1{
+      color:white;
+  }
+  h2{
+    color: white;
+  }
+  
+  .info{
+      display: inline-block;
+      margin: 5em;
+  }
+  
+  
