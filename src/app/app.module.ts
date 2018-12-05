@@ -11,7 +11,7 @@ import { AuthComponent } from './auth/auth.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
