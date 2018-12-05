@@ -20,7 +20,7 @@ nav a {
   margin: .3em;
   float: right;
   font-size: 2em;
- 
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 nav a:visited, a:link {
