@@ -1,10 +1,29 @@
-div{
-    background-color: rgba(56,85,153, .75);
-    width: 23em;
-    margin: 1em;
-}
-
-.info{
-    display: inline-block;
-
-}
+.aboutrooms{
+    
+    color: white;
+  }
+  
+  .aboutus{
+    text-align: center;
+    color:white;
+    max-width: 400px
+  }
+  
+  .admin{
+    text-align: center;
+    color:white;
+    max-width: 400px
+  }
+  h1{
+      color:white;
+  }
+  h2{
+    color: white;
+  }
+  
+  .info{
+      display: inline-block;
+      margin: 5em;
+  }
+  
+  
