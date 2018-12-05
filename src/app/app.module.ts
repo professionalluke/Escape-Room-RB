@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout'
 
 @NgModule({
   declarations: [
@@ -16,7 +19,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
     HomeComponent,
     ListRoomsComponent,
     AuthComponent,
-    UserAuthComponent
+    UserAuthComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,9 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
