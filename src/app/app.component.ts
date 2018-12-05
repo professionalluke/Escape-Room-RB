@@ -9,5 +9,5 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'escape-room-red-badge';
+  title = 'Escape plan';
 }
