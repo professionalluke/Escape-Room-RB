@@ -30,6 +30,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatCardModule,
     FlexLayoutModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
