@@ -1,0 +1,53 @@
+<div>
+  <h2>User Sign Up</h2>
+
+  <form [formGroup]="signUp" (ngSubmit)="onSignUp()" id="signForm">
+    <label for="username">Username</label><br>
+    <input 
+    type="text"
+    placeholder="Username"
+    formControleName="username"
+    name="username">
+    <br><br>
+
+    <label for="email">Email</label><br>
+    <input
+    type="text"
+    placeholder="Email"
+    formControlName="email"
+    name="email" >
+    <br><br>
+
+    <label for="password">Password</label><br>
+    <input
+     type="text"
+     placeholder="Password"
+     formControlName="password"
+     name="pasword" ><br><br>
+
+  </form>
+</div>
+
+<div>
+  <h2>User Login</h2>
+
+  <form [formGroup]="login" (ngSubmit)="onLogin()" id="logForm">
+      <label for="username">Email</label><br>
+      <input 
+        type="text" 
+        placeholder="Email"
+        formControlName="email" 
+        name="email" >
+        <br><br>
+      
+  
+      <label for="password">Password</label><br>
+      <input
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+        name="password" ><br><br>
+  
+      <button type="submit" (ngSubmit)="onLogin()">Login</button>
+    </form>
+</div>
