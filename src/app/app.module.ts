@@ -12,6 +12,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatCardModule,
-    FlexLayoutModule
-
+    FlexLayoutModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
