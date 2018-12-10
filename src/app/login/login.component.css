@@ -13,6 +13,7 @@
   .my-card
   {
     float: left;
+    transform: translate(140%);
     background: rgb(179, 179, 179);
   }
 
