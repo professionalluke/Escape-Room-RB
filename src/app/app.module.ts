@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BusinessComponent } from './business/business.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ListRoomsComponent,
     AuthComponent,
     UserAuthComponent,
+    BusinessComponent,
   ],
   imports: [
     BrowserModule,
