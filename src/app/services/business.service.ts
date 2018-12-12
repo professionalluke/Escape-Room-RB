@@ -17,7 +17,7 @@ const httpOptions = {
 })
 
 export class BusinessService {
-  private dbUrl = 'https://localhost:3000/business/all';
+  private dbUrl = 'http://localhost:3000/business/all';
 
   constructor(
     private _http: HttpClient,
@@ -32,6 +32,7 @@ export class BusinessService {
     )
     
   }
+  
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
@@ -46,9 +47,8 @@ export class BusinessService {
     };
   }
 
-  /** Log a HeroService message with the MessageService */
+
   private log(message: string) {
-    this.messageService.add(`HeroService: ${message}`);
+    this.messageService.add(`BusinessService: ${message}`);
   }
 }
-console.log(Business);
