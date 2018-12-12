@@ -19,6 +19,6 @@ export class BusinessComponent implements OnInit {
 
   getBusiness(): void {
     this.businessService.getLocations()
-      .subscribe(business => this.business = business);
+      .subscribe(businesses => {this.business = businesses, console.log(this.business)});
   }
 }
