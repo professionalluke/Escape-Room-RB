@@ -48,3 +48,6 @@ nav {
 body{
 font-family: 'Josefin Sans', sans-serif;
 }
+
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';

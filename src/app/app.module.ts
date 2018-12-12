@@ -13,7 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 // import { LoginComponent } from './login/login.component';
-import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule,} from  '@angular/material';
+import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule,MatDialogModule} from  '@angular/material';
 import { LoginComponent } from './login/login.component';
 
 
@@ -50,6 +50,7 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     MatListModule,
     MatRadioModule,
+    MatDialogModule,
  ],
   providers: [],
   bootstrap: [AppComponent]
