@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ListRoomsService } from '../services/list-rooms.service';
+import { Business } from '../models/business';
 
 @Component({
   selector: 'app-list-rooms',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRoomsComponent implements OnInit {
 
-  constructor() { }
+  business: Business[];
+
+  constructor(private themesService: ListRoomsService) { }
 
   ngOnInit() {
   }
