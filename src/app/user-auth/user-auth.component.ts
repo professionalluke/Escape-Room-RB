@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
-import { NG_MODEL_WITH_FORM_CONTROL_WARNING } from '@angular/forms/src/directives';
+// import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
 
 @Component({
   selector: 'app-user-auth',
@@ -8,34 +8,34 @@ import { NG_MODEL_WITH_FORM_CONTROL_WARNING } from '@angular/forms/src/directive
   styleUrls: ['./user-auth.component.css']
 })
 export class UserAuthComponent implements OnInit {
-  signUp: FormGroup
-  login: FormGroup
+  // signUp: FormGroup
+  // login: FormGroup
   token = ''
   private user = []
 
 
   constructor(
-    private fb: FormBuilder,
+    // private fb: FormBuilder,
   ) { }
 
   ngOnInit() {
-    this.login = this.fb.group({
-      email: new FormControl(),
-      password: new FormControl()
-    })
+    // this.login = this.fb.group({
+    //   email: new FormControl(),
+    //   password: new FormControl()
+    // })
     
-    this.signUp = this.fb.group({
-      username: new FormControl(),
-      email: new FormControl(),
-      password: new FormControl(),
-    })
-  }
+  //   this.signUp = this.fb.group({
+  //     username: new FormControl(),
+  //     email: new FormControl(),
+  //     password: new FormControl(),
+  //   })
+  // }
 
-  onLogin() {
+//   onLogin() {
 
-  }
+//   }
 
-  onSignUp(){
+//   onSignUp(){
 
   }
 }
