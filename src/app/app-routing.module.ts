@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'business', component: BusinessComponent},
   {path: 'user-auth', component: UserAuthComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'list-rooms', component: ListRoomsComponent},
 ]
 
 @NgModule({
