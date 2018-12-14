@@ -10,7 +10,7 @@ import { Business } from '../models/business';
 export class BusinessComponent implements OnInit {
 
   business: Business[];
-
+  selectedBusiness: Business;
   constructor(private businessService: BusinessService) { }
 
   ngOnInit() {
@@ -20,5 +20,10 @@ export class BusinessComponent implements OnInit {
   getBusiness(): void {
     this.businessService.getLocations()
       .subscribe(businesses => {this.business = businesses, console.log(this.business)});
+  }
+
+  
+  onSelect(business: Business): void {
+    this.selectedBusiness = business;
   }
 }

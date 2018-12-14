@@ -1,7 +1,7 @@
 <html>
 <h2>Escape Rooms</h2>
 <ul class="buisnesses">
-  <li *ngFor="let business of business">
+  <li *ngFor="let business of business" (click)="onSelect(business)">
     <!-- <span class="badge"> </span> -->
     Business: {{business.name}}
     <br />

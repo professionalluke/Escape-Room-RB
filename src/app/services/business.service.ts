@@ -32,6 +32,14 @@ export class BusinessService {
     )
     
   }
+
+  getBusiness(id: number): Observable<Business> {
+    const url = `http:localhost:3000/business/${id}`;
+    return this._http.get<Business>(url).pipe(
+      tap(_ => this.log(`fetched hero id=${id}`)),
+      catchError(this.handleError<Business>(`getBusiness id=${id}`))
+    )
+  }
   
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

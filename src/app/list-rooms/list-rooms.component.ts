@@ -1,19 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import {ListRoomsService } from '../services/list-rooms.service';
+import { Component, OnInit, Input } from '@angular/core';
+import {ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 import { Business } from '../models/business';
+import { BusinessService } from '../services/business.service';
+
 
 @Component({
   selector: 'app-list-rooms',
   templateUrl: './list-rooms.component.html',
   styleUrls: ['./list-rooms.component.css']
 })
+
 export class ListRoomsComponent implements OnInit {
-
-  business: Business[];
-
-  constructor(private themesService: ListRoomsService) { }
-
+  @Input() business: Business;
+  
+  
+  constructor(
+    private route: ActivatedRoute,
+    private businessService: BusinessService,
+    private location: Location
+  ) { }
+  
   ngOnInit() {
+    this.getBusiness();
   }
-
+  
+  getBusiness(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.businessService.getBusiness(id)
+      .subscribe(business => this.business = business)
+  }
 }
