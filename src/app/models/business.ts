@@ -1,4 +1,5 @@
 export class Business {
+    id: number
     name: string
     location: string
     phone: string
@@ -7,5 +8,6 @@ export class Business {
     number_of_rooms: number
     url: string
     themes: object
+    roomTheme: object
     image: string
 }

@@ -26,9 +26,18 @@ export class ListRoomsComponent implements OnInit {
     this.getBusiness();
   }
   
+  // getBusiness(): void {
+  //   const id = this.business.id;
+  //   this.businessService.getBusiness(id)
+  //     .subscribe(business => this.business = business);
+  // }
+
   getBusiness(): void {
     const id = +this.route.snapshot.paramMap.get('id');
+    console.log(id);
     this.businessService.getBusiness(id)
-      .subscribe(business => this.business = business)
+      .subscribe(business =>{ this.business = business});
   }
+
 }
+
