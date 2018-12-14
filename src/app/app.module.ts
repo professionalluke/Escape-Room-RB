@@ -12,9 +12,14 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 // import { LoginComponent } from './login/login.component';
 import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule,MatDialogModule} from  '@angular/material';
 import { LoginComponent } from './login/login.component';
+import { AuthenticationService } from '.'
+
+
+import { BusinessComponent } from './business/business.component';
 
 
 @NgModule({
@@ -22,12 +27,10 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HomeComponent,
     ListRoomsComponent,
-    
     UserAuthComponent,
-    
     LoginComponent,
-    // LoginComponent,
-    
+    // LoginComponent,    
+    BusinessComponent,
   ],
   imports: [
     BrowserModule,
