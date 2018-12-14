@@ -17,7 +17,7 @@ const httpOptions = {
 })
 
 export class BusinessService {
-  private dbUrl = 'http://localhost:3000/business/all';
+  private dbUrl = 'http://localhost:3000/business';
 
   constructor(
     private _http: HttpClient,
@@ -25,14 +25,30 @@ export class BusinessService {
   ) { }
 
   getLocations(): Observable<Business[]> {
-    return this._http.get<Business[]>(this.dbUrl)
+    return this._http.get<Business[]>(this.dbUrl+`/all`)
     .pipe(
       tap(_ => this.log('fetched businesses')),
       catchError(this.handleError('getLocations',[]))
     )
     
   }
+
+  // getBusiness(id:number): Observable<Business> {
+  //   return this._http.get<Business>(`http:localhost:3000/business/${id}`).pipe(
+  //     tap(_ => this.log(`fetched hero id=${id}`)),
+  //     catchError(this.handleError<Business>(`getBusiness id=${id}`))
+  //   )
+  // }
   
+  getBusiness(id: number): Observable<Business> {
+    const url = `${this.dbUrl}/${id}`;
+    console.log(url);
+    return this._http.get<Business>(url).pipe(
+      tap(_ => this.log(`fetched business id=${id}`)),
+      catchError(this.handleError<Business>(`getBusiness id=${id}`))
+    );
+  }
+
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 

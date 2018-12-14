@@ -1,11 +1,27 @@
+<body>
+<html>
 <div *ngIf="business">
 
   <h2>{{business.name}} Details</h2>
   <br/>
+  <h3>Location: {{business.location}}</h3>
+  <br>
+  <h3>Themes: {{roomTheme}}</h3>
+  <br>
+  <h3>Price: ${{business.price}}</h3>
+  <br>
+  <h3>Hours: {{business.hours}}</h3>
+  <br>
+  <h3>Contact: {{business.phone}}</h3>
+  <br>
+  <img src={{business.image}}>
+  <br>
+  <a href="{{business.url}}">Check out their site here!</a>
   <div>
     
   </div>
 
 </div>
 
-<h2> what?</h2>
+</html>
+</body>
