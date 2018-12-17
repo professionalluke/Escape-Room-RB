@@ -13,10 +13,14 @@
 
   .my-card
   {
+    margin-top: 10em;
+    margin-right: 10em;
     float: left;
     transform: translate(140%);
     background: rgb(179, 179, 179);
-    margin: auto;
+    
+    min-width: 500px;
+    min-height: 100px;
   }
 
   body{
