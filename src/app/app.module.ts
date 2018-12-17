@@ -21,6 +21,8 @@ import { LoginComponent } from './login/login.component';
 
 import { BusinessComponent } from './business/business.component';
 import { AdminComponent } from './admin/admin.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { AdminComponent } from './admin/admin.component';
     // LoginComponent,    
     BusinessComponent,
     AdminComponent,
+    SignupComponent,
+    
   ],
   imports: [
     BrowserModule,
