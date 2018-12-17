@@ -1,7 +1,7 @@
 <body>
   <mat-card class="my-card">
     <mat-card-content>
-       <form class="my-form">
+       <form onSubmit={this.handleSubmit} class="my-form">
           <mat-form-field class="full-width">
              <mat-label>Username</mat-label>
              <input  matInput  placeholder="Username" id="username">
