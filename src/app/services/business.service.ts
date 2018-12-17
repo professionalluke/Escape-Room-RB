@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from '../services/message.service';
+import { APIURL } from '../../environments/environment.prod';
 
 import {Business } from '../models/business';
 
@@ -17,7 +18,7 @@ const httpOptions = {
 })
 
 export class BusinessService {
-  private dbUrl = 'http://localhost:3000/business';
+  private dbUrl = `${APIURL}/business`;
 
   constructor(
     private _http: HttpClient,
