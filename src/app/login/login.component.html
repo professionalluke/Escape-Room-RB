@@ -18,11 +18,11 @@
       </mat-card-actions>
  </mat-card>
  </body> -->
-
- <div class="grandparentcontainer">
-   <div class="parentContainer">
+<body>
+ <div class="Container">
+   <div class="Container2">
      <div>
-       <form class="loginForm">
+       <form class="loginF">
          <h2>LOGIN</h2>
          <div class="form-group">
            <label for="username" class="col-sm-3 control-label">Username</label>
@@ -37,11 +37,11 @@
            </div>
          </div>
          <mat-card-actions>
-           <button mat-raised-button class="loginbutton" (click)="login(username, password, email)">Login</button>
+           <button mat-raised-button class="login" (click)="login(username, password, email)">Login</button>
          </mat-card-actions>
-         <span class="help-block">Don't have an account yet? <a routerLink='/signup'>Signup here.</a></span>
-         <span class="back2home"><a routerLink='/'>Or click here to go back to the homepage.</a></span>
+         <span class="relocate">Need an Account? <a routerLink='/signup'>Signup here.</a></span>
        </form>
      </div>
    </div>
  </div>
+ </body>

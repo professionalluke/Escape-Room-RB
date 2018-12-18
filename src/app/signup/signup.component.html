@@ -1,7 +1,7 @@
- <div class="grandparentcontainer">
-  <div class="parentContainer">
+ <div class="Container">
+  <div class="Container2">
    <div>
-    <form class="signupForm">
+    <form class="signupF">
      <h2>SIGNUP</h2>
      <div class="form-group">
       <label for="email" class="col-sm-3 control-label">Email</label>
@@ -21,11 +21,10 @@
       </div>
      </div>
      <mat-card-actions>
-      <button mat-raised-button class="signupbutton" (click)="signup(username, password, email)">Signup</button>
+      <button mat-raised-button class="signup" (click)="signup(username, password, email)">Signup</button>
      </mat-card-actions>
-     <span class="help-block">Already have an account? <a routerLink='/login'>Login here.</a></span>
-     <span class="back2home"><a routerLink='/'>Or click here to go back to the homepage.</a></span>
-    </form>
-   </div>
-  </div>
+     <span class="relocate">Returning? <a routerLink='/login'>Login here.</a></span>
+    <!-- </form> -->
+   <!-- </div> -->
+  <!-- </div> -->
  </div>
