@@ -21,6 +21,7 @@ import { LoginComponent } from './login/login.component';
 
 import { BusinessComponent } from './business/business.component';
 import { AdminComponent } from './admin/admin.component';
+import { CreateBusinessComponent } from './create-business/create-business.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { AdminComponent } from './admin/admin.component';
     // LoginComponent,    
     BusinessComponent,
     AdminComponent,
+    CreateBusinessComponent,
   ],
   imports: [
     BrowserModule,
