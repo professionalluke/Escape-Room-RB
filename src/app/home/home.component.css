@@ -1,27 +1,27 @@
 .aboutrooms{
   text-align: center;
   color: rgb(179, 179, 179);;
-  max-width: 18em;
+  max-width: 25em;
   background: #385589;
-  height: 32em;
+  height: 35em;
   vertical-align: top;
 }
 
 .aboutus{
   text-align: center;
   color:rgb(179, 179, 179);
-  max-width: 18em;
+  max-width: 25em;
   background: #385589;
-  height: 32em;
+  height: 35em;
   vertical-align: top;
 }
 
 .admin{
-  /* text-align: center; */
+  text-align: center;
   color:rgb(179, 179, 179);;
-  max-width: 18em;
+  max-width: 25em;
   background: #385589;
-  height: 32em;
+  height: 35em;
   vertical-align: top;
 }
 
@@ -36,10 +36,10 @@ h2{
 
 .info{
     display: inline-block;
-    margin: 2em;
+    margin: 1em;
     text-align: center;
     padding: 30px !important;
-    min-height: 35em;
+    min-height: 38em;
     vertical-align: top;
 }
 
@@ -52,7 +52,8 @@ html{
 }
 
 .escape {
-height: 19em;
+height: 22em;
+
 }
 
 .adminImage{
@@ -60,13 +61,14 @@ margin-top: -2.5em;
 }
 
 .historyButton{
-  background-color:gray;
+background-color:gray;
 }
 
 button{
-  background-color: gray;
+background-color: gray;
+color: #385589;
 }
 
 .teamButton{
-  margin-bottom: 20em;
+margin-bottom: 20em;
 }
