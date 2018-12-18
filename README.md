@@ -1,27 +1,43 @@
-# EscapeRoomRedBadge
+# Escaperoom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+Created with an Angular.js client-side and a Node.js server-side. Escaperoom is a full CRUD application that helps locate and provide users with comparable prices and themes of Escape rooms around the Indianapolis area so people can find the right escape room experience. 
+`version 1.0.1`
 
-## Development server
+### Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Make sure to have the following libraries and framework's installed in order run this application.
 
-## Code scaffolding
+`Angular.js CLI`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm.js CLI`
 
-## Build
+`Node.js CLI`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Starting Up
 
-## Running unit tests
+Follow the instructions below to copy, run, and use the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+In your terminal use `git clone https://github.com/professionalluke/Escape-Room-RB.git`
 
-## Running end-to-end tests
+Run `npm install` to install the needed dependicies to run the application
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng serve` or `ng serve -o` for a development/test server. Navigate to `http://localhost:4200/`. The app will automatically reload when changing and saving files.
 
-## Further help
+## Built With
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular.js](https://angular.io/docs) - The web framework used
+* [Node.js](https://nodejs.org/en/) - Application Management
+* [npm.js](https://www.npmjs.com/) - Package Management
+
+## Authors
+
+* **Jason Lee** - [mrjasonalee](https://github.com/mrjasonalee)
+* **Keagon Talbot** - [KTalbot11](https://github.com/KTalbot11)
+* **Emily Perkins** - [eaperkins34](https://github.com/eaperkins34)
+* **Luke Cureton** - [professionalluke](https://github.com/professionalluke)
+
+Also see the list of [contributors] here(https://github.com/professionalluke/Escape-Room-RB/graphs/contributors) for more about those who participated in this project.
+
+## License
+
+This project is licensed under the MIT License
