@@ -22,6 +22,8 @@ import { LoginComponent } from './login/login.component';
 import { BusinessComponent } from './business/business.component';
 import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
+import { CreateBusinessComponent } from './create-business/create-business.component';
+// import { CanActivate } from '@angular/router';
 
 
 
@@ -36,9 +38,11 @@ import { SignupComponent } from './signup/signup.component';
     BusinessComponent,
     AdminComponent,
     SignupComponent,
-    
+    CreateBusinessComponent,
+
   ],
   imports: [
+    // CanActivate,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

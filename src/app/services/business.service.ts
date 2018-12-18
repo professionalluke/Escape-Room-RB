@@ -34,12 +34,6 @@ export class BusinessService {
     
   }
 
-  // getBusiness(id:number): Observable<Business> {
-  //   return this._http.get<Business>(`http:localhost:3000/business/${id}`).pipe(
-  //     tap(_ => this.log(`fetched hero id=${id}`)),
-  //     catchError(this.handleError<Business>(`getBusiness id=${id}`))
-  //   )
-  // }
   
   getBusiness(id: number): Observable<Business> {
     const url = `${this.dbUrl}/${id}`;
@@ -48,6 +42,12 @@ export class BusinessService {
       tap(_ => this.log(`fetched business id=${id}`)),
       catchError(this.handleError<Business>(`getBusiness id=${id}`))
     );
+  }
+
+  createBusiness(business: Business) : Observable<Business[]> {
+    const url = `${this.dbUrl}/create`
+    console.log(url)
+    return this._http.post<Business[]>(url, business, httpOptions)
   }
 
   private handleError<T> (operation = 'operation', result?: T) {

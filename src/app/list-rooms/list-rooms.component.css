@@ -6,3 +6,17 @@ body{
     height: 130%;
     color:white;
 }
+
+.roomThemes{
+    float: right;
+    width: 55%;
+}
+
+a{
+    color: white;
+}
+
+img{
+    height: 15em;
+    width: 23em;
+}
