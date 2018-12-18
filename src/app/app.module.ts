@@ -22,6 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { BusinessComponent } from './business/business.component';
 import { AdminComponent } from './admin/admin.component';
 import { CreateBusinessComponent } from './create-business/create-business.component';
+// import { CanActivate } from '@angular/router';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { CreateBusinessComponent } from './create-business/create-business.compo
     CreateBusinessComponent,
   ],
   imports: [
+    // CanActivate,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
