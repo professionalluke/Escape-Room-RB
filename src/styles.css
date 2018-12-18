@@ -1,3 +1,4 @@
+
 /* You can add global styles to this file, and also import other style files */
 /* body{
     background: url(./assets/bricks.jpg) no-repeat center;
@@ -8,3 +9,10 @@
 } */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html{
+    background: url(./assets/BRICKS.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-position: cover;
+    background-size: cover;
+}

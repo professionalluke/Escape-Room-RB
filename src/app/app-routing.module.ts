@@ -7,6 +7,7 @@ import {LoginComponent} from './login/login.component'
 
 import { UserAuthComponent} from './user-auth/user-auth.component'
 import { BusinessComponent } from './business/business.component';
+import { SignupComponent} from './signup/signup.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'user-auth', component: UserAuthComponent},
   {path: 'login', component: LoginComponent},
   {path: 'list-rooms/:id', component: ListRoomsComponent},
+  {path: 'signup',component: SignupComponent},
 ]
 
 @NgModule({

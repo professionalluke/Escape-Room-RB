@@ -6,17 +6,37 @@
   <br/>
   <h3>Location: {{business.location}}</h3>
   <br>
-  <h3>Themes: {{roomTheme}}</h3>
+  <div class="roomThemes">
+  <h3>Themes:</h3> 
+  <h4>{{business.roomTheme[0].name}}</h4>
+  <h5>{{business.roomTheme[0].description}}</h5>
+  <br>
+  <h4>{{business.roomTheme[1].name}}</h4>
+  <h5>{{business.roomTheme[1].description}}</h5>
+  <br>
+  <h4>{{business.roomTheme[2].name}}</h4>
+  <h5>{{business.roomTheme[2].description}}</h5>
+  <br>
+  <h4>{{business.roomTheme[3].name}}</h4>
+  <h5>{{business.roomTheme[3].description}}</h5>
+</div>
   <br>
   <h3>Price: ${{business.price}}</h3>
   <br>
-  <h3>Hours: {{business.hours}}</h3>
+  <h3>Hours: </h3>
+    <h2>{{business.hours[0]}}</h2>
+    <h2>{{business.hours[1]}}</h2>
+    <h2>{{business.hours[2]}}</h2>
+    <h2>{{business.hours[3]}}</h2>
+    <h2>{{business.hours[4]}}</h2>
+    <h2>{{business.hours[5]}}</h2>
+    <h2>{{business.hours[6]}}</h2>
   <br>
   <h3>Contact: {{business.phone}}</h3>
   <br>
   <img src={{business.image}}>
   <br>
-  <a href="{{business.url}}">Check out their site here!</a>
+  <a href="{{business.url}}"><button>Check out their site here!</button></a>
   <div>
     
   </div>
