@@ -32,7 +32,7 @@ Run `ng serve` or `ng serve -o` for a development/test server. Navigate to `http
 ## Authors
 
 * **Jason Lee** - [mrjasonalee](https://github.com/mrjasonalee)
-* **Keagon Talbot** - [KTalbot11](https://github.com/KTalbot11)
+* **Keagan Talbot** - [KTalbot11](https://github.com/KTalbot11)
 * **Emily Perkins** - [eaperkins34](https://github.com/eaperkins34)
 * **Luke Cureton** - [professionalluke](https://github.com/professionalluke)
 
