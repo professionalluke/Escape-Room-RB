@@ -1,4 +1,4 @@
-body{
+form {
     background: url(../../assets/bricks.jpg) no-repeat center;
     background-size: 100% 100%;
     background-position: top center;
@@ -6,12 +6,12 @@ body{
     height: 100vh;
     position:fixed;
     color:white;
+    padding-left: 2em;
 }
-.form1{
-    display: inline-block;
-}
-input{
-    width: 291px;
-    margin:  auto;
-    padding: auto auto;
+
+input {
+    float: right;
+    margin-right: 55em;
+    width: 30em;
+    color: white;
 }

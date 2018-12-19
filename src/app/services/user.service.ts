@@ -49,11 +49,10 @@ export class UserService {
             return user;
         }));
     }
-    login(username, password, email){
+    login(username, password, ){
         let UserToServer = {
             username,
             password,
-            email
         }
         return this.http.post<any>(`https://escapeplan-server.herokuapp.com/user/login`, UserToServer)
         .pipe(map(user=>{
