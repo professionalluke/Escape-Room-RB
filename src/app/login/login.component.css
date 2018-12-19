@@ -1,28 +1,3 @@
-/* .my-form{
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-    background: rgb(179, 179, 179);
-    color: #385589;
-    
-  }
-   
-  .full-width {
-    width: 100%;
-  }
-
-  .my-card
-  {
-    margin-top: 10em;
-    margin-right: 10em;
-    float: left;
-    transform: translate(140%);
-    background: rgb(179, 179, 179);
-    
-    min-width: 500px;
-    min-height: 100px;
-  } */
-
  .Container{
     background: url(../../assets/bricks.jpg) no-repeat center;
     background-size: 100% 100%;
