@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms'
 
+import { Business } from '../models/business'
 import { BusinessService } from '../services/business.service'
 
 @Component({
@@ -10,7 +11,9 @@ import { BusinessService } from '../services/business.service'
 })
 export class CreateBusinessComponent implements OnInit {
   createBusiness: FormGroup
-  business = []
+  business: Business[]
+  tempBusinessId: number
+  createdClick = false
 
   constructor(private _fb: FormBuilder, private _bs: BusinessService) { }
 
@@ -28,14 +31,26 @@ export class CreateBusinessComponent implements OnInit {
     })
   }
 
-  onCreateBusiness(): void {
-    this.business.unshift(this.createBusiness.value)
-    this._bs.createBusiness(this.business[0]).subscribe(Business => {
-      this.business[0] = Business
+  onSubmit() {
+    console.log(this.createBusiness.value)
+    this._bs.createBusiness(this.createBusiness.value).subscribe(res => {
+      console.log(res)
     })
   }
 
-  // onDeleteBusiness(): void {
-  //   this._bs.destroyBusiness(this.)
+  clickedButton(id) {
+    this.createdClick = !this.createdClick;
+    this.tempBusinessId = id;
+  }
+
+  // onCreateBusiness(): void {
+  //   this.business.push(this.createBusiness.value)
+  //   this._bs.createBusiness(this.createBusiness.value)
   // }
+
+  onDeleteBusiness(id) {
+    this._bs.deleteBusiness(id).subscribe(res => {
+      console.log('Deleted');
+    });
+  }
 }

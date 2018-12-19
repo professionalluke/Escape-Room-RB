@@ -7,23 +7,23 @@ import { ListRoomsComponent } from './list-rooms/list-rooms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-
-// import { LoginComponent } from './login/login.component';
-import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule,MatDialogModule} from  '@angular/material';
+import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule, MatDialogModule } from  '@angular/material';
 import { LoginComponent } from './login/login.component';
-
-
-
 import { BusinessComponent } from './business/business.component';
+import { ModalboxComponent } from './modalbox/modalbox.component';
+import { ModalboxtextComponent } from './modalboxtext/modalboxtext.component';
+import { ModalboxtwoComponent } from './modalboxtwo/modalboxtwo.component';
+import { ModalboxtexttwoComponent } from './modalboxtexttwo/modalboxtexttwo.component';
+import { ModalboxthreeComponent } from './modalboxthree/modalboxthree.component';
+import { ModalboxtextthreeComponent } from './modalboxtextthree/modalboxtextthree.component';
 import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
 import { CreateBusinessComponent } from './create-business/create-business.component';
-// import { CanActivate } from '@angular/router';
+import { AuthGuard } from '../app/guards/auth.guard';
 
 
 
@@ -33,16 +33,20 @@ import { CreateBusinessComponent } from './create-business/create-business.compo
     HomeComponent,
     ListRoomsComponent,
     UserAuthComponent,
-    LoginComponent,
-    // LoginComponent,    
+    LoginComponent,   
     BusinessComponent,
+    ModalboxComponent,
+    ModalboxtextComponent,
+    ModalboxtwoComponent,
+    ModalboxtexttwoComponent,
+    ModalboxthreeComponent,
+    ModalboxtextthreeComponent,
     AdminComponent,
     SignupComponent,
     CreateBusinessComponent,
 
   ],
   imports: [
-    // CanActivate,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -64,8 +68,16 @@ import { CreateBusinessComponent } from './create-business/create-business.compo
     MatListModule,
     MatRadioModule,
     MatDialogModule,
+    
  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AuthGuard
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ModalboxComponent,
+    ModalboxtwoComponent,
+    ModalboxthreeComponent
+  ]
 })
 export class AppModule { }

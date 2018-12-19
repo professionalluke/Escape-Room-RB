@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateBusinessComponent } from './create-business.component';
+import { ModalboxtextthreeComponent } from './modalboxtextthree.component';
 
-describe('CreateBusinessComponent', () => {
-  let component: CreateBusinessComponent;
-  let fixture: ComponentFixture<CreateBusinessComponent>;
+describe('ModalboxtextthreeComponent', () => {
+  let component: ModalboxtextthreeComponent;
+  let fixture: ComponentFixture<ModalboxtextthreeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreateBusinessComponent ]
+      declarations: [ ModalboxtextthreeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreateBusinessComponent);
+    fixture = TestBed.createComponent(ModalboxtextthreeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

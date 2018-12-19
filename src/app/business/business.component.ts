@@ -26,4 +26,9 @@ export class BusinessComponent implements OnInit {
   onSelect(business: Business): void {
     this.selectedBusiness = business;
   }
+  onDeleteBusiness(id) {
+    this.businessService.deleteBusiness(id).subscribe(res => {
+      console.log('Deleted');
+    });
+  }
 }
