@@ -3,19 +3,24 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod",
+    "start": "serve -s dist/escape-room-red-badge"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^7.1.3",
     "@angular/cdk": "^7.1.1",
-    "@angular/common": "^7.1.2",
-    "@angular/compiler": "^7.1.2",
-    "@angular/core": "^7.1.2",
+
+    "@angular/cli": "^7.1.1",
+    "@angular/common": "~7.1.0",
+    "@angular/compiler": "~7.1.0",
+    "@angular/compiler-cli": "~7.1.0",
+    "@angular/core": "~7.1.0",
+
     "@angular/flex-layout": "^7.0.0-beta.19",
     "@angular/forms": "^7.1.2",
     "@angular/material": "^7.1.1",
@@ -27,15 +32,18 @@
     "core-js": "^2.6.0",
     "ngx-bootstrap": "^3.1.2",
     "ngx-carousel": "^1.3.5",
+    "ngx-smart-modal": "^7.1.0",
     "rxjs": "~6.3.3",
+    "sequelize": "^4.42.0",
+    "serve": "^10.1.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.11.2",
-    "@angular/cli": "^7.1.2",
-    "@angular/compiler-cli": "^7.1.2",
-    "@angular/language-service": "^7.1.2",
+<
+    "@angular-devkit/build-angular": "^0.11.1",
+    "@angular/language-service": "~7.1.0",
+
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

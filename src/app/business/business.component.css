@@ -1,0 +1,51 @@
+html{
+    background: url(../../assets/BRICKS.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-position: cover;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.deck {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    width: 26vw;
+    min-height: 30vw;
+    text-align: center;
+    background: transparent; 
+    display: inline-block;
+    border: .2em solid white;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    vertical-align: top;
+    
+}
+.cardContainer{
+    padding: 1em 2em;
+    height: 24vw;
+    display: inline-block;
+    height: 100%;
+}
+.card:hover {
+    box-shadow: 0.5em 0.5em 2em rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+img{
+    height: 7em;
+    width: 12em;
+}

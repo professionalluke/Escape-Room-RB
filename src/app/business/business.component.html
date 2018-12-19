@@ -1,13 +1,16 @@
-<h2>Escape Rooms</h2>
-<ul class="buisnesses">
-  <li *ngFor="let business of business">
-      <!-- <span class="badge"> </span> -->
-     Business: {{business.name}} 
-     <br/>
-     Location: {{business.location}}
-     <br/>
-     Themes: {{business.themes}}
-     <br/>
+<html>
+<h1>Escape Rooms</h1>
+
+<div class="deck">
+  <div class="cardContainer">
+    <div class="card" *ngFor="let business of business" (click)="onSelect(business)" >
      
-  </li>
-</ul>
+      <a routerLink="/list-rooms/{{business.id}}">
+      <h2>{{business.name}}</h2><br />
+        <h3>Address: {{business.location}}</h3>
+        <p>Themes: {{business.themes}}</p><br />
+        <img src={{business.image}}></a>
+    </div>
+  </div>
+</div>
+</html>
