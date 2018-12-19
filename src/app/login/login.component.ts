@@ -13,6 +13,9 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent implements OnInit {
   users=[];
   error ='';
+  username:string;
+  email:string;
+  password:string;
 
   constructor(private router: Router, private userservice: UserService, private http: HttpClient) { }
 
