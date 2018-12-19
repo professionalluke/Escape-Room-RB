@@ -18,6 +18,7 @@ import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,Ma
 import { LoginComponent } from './login/login.component';
 
 
+
 import { BusinessComponent } from './business/business.component';
 import { ModalboxComponent } from './modalbox/modalbox.component';
 import { ModalboxtextComponent } from './modalboxtext/modalboxtext.component';
@@ -25,6 +26,12 @@ import { ModalboxtwoComponent } from './modalboxtwo/modalboxtwo.component';
 import { ModalboxtexttwoComponent } from './modalboxtexttwo/modalboxtexttwo.component';
 import { ModalboxthreeComponent } from './modalboxthree/modalboxthree.component';
 import { ModalboxtextthreeComponent } from './modalboxtextthree/modalboxtextthree.component';
+import { AdminComponent } from './admin/admin.component';
+import { SignupComponent } from './signup/signup.component';
+import { CreateBusinessComponent } from './create-business/create-business.component';
+// import { CanActivate } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -40,9 +47,14 @@ import { ModalboxtextthreeComponent } from './modalboxtextthree/modalboxtextthre
     ModalboxtwoComponent,
     ModalboxtexttwoComponent,
     ModalboxthreeComponent,
-    ModalboxtextthreeComponent
+    ModalboxtextthreeComponent,
+    // AdminComponent,
+    SignupComponent,
+    CreateBusinessComponent,
+
   ],
   imports: [
+    // CanActivate,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

@@ -1,0 +1,74 @@
+<form [formGroup] ="createBusiness" (ngSubmit)="onCreateBusiness()">
+  <label for ="nameOfBusiness">Business Name</label>
+  <input
+    type="text"
+    name="nameOfBusiness"
+    formControlName="nameOfBusiness"
+    required>
+
+  <label for="location">Full Address</label>
+  <input
+    type="text"
+    name="location"
+    formControlName="location"
+    required>
+
+  <label for="phone">Phone Number</label>
+  <input
+    type="text"
+    name="phone"
+    formControlName="phone"
+    required>
+
+  <label for="hours">Hours</label>
+  <input
+    type="text"
+    name="hours"
+    formControlName="hours"
+    required>
+
+  <label for="price">Average Price</label>
+  <input 
+    type="text"
+    name="price"
+    formControlName="price">
+
+  <label for="number_of_rooms">Number of Rooms</label>
+  <input
+    type="text"
+    name="number_of_rooms"
+    formControlName="number_of_rooms">
+
+  <label for="url">URL</label>
+  <input
+    type="text"
+    name="url"
+    formControlName="url"
+    required>
+
+  <label for="themes">Available Themes</label>
+  <input  
+    type="text"
+    name="themes"
+    formControlName="themes"
+    required>
+
+  <label for="image">Image</label>
+  <input
+    type="text"
+    name="image"
+    formControlName="image"
+    required>
+
+  <button type="submit"></button>
+
+</form>
+
+
+phone
+hours
+price
+number of rooms
+url
+themes
+image

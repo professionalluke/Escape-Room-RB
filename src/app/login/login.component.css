@@ -1,4 +1,4 @@
-.my-form{
+/* .my-form{
     min-width: 150px;
     max-width: 500px;
     width: 100%;
@@ -13,17 +13,33 @@
 
   .my-card
   {
+    margin-top: 10em;
+    margin-right: 10em;
     float: left;
     transform: translate(140%);
     background: rgb(179, 179, 179);
-    margin: auto;
-  }
+    
+    min-width: 500px;
+    min-height: 100px;
+  } */
 
-  body{
+ .Container{
     background: url(../../assets/bricks.jpg) no-repeat center;
     background-size: 100% 100%;
     position:fixed;
     width: 100%;
     height: 100vh;
-    
+    color:white;
+}
+
+.h2{
+  margin-left: 5em;
+  margin-top: 3em;
+}
+.square{
+margin-left: 33em;
+margin-top: 3em;
+}
+.login{
+  margin-left:1em;
 }

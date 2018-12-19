@@ -5,51 +5,30 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from '../services/message.service';
 import { APIURL } from '../../environments/environment.prod';
 
-import {Business } from '../models/business';
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type' : 'application/json'
-  })
-}
+import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
 })
-
-export class BusinessService {
-  private dbUrl = `${APIURL}/business`;
+export class AuthService {
+  private dbUrl = `${APIURL}/user`;
 
   constructor(
     private _http: HttpClient,
     private messageService: MessageService
   ) { }
 
-  getLocations(): Observable<Business[]> {
-    return this._http.get<Business[]>(this.dbUrl+`/all`)
-    .pipe(
-      tap(_ => this.log('fetched businesses')),
-      catchError(this.handleError('getLocations',[]))
-    )
-    
-  }
 
-  
-  getBusiness(id: number): Observable<Business> {
+
+  getUser(id: number): Observable<User> {
     const url = `${this.dbUrl}/${id}`;
     console.log(url);
-    return this._http.get<Business>(url).pipe(
-      tap(_ => this.log(`fetched business id=${id}`)),
-      catchError(this.handleError<Business>(`getBusiness id=${id}`))
+    return this._http.get<User>(url).pipe(
+      tap(_ => this.log(`fetched user id=${id}`)),
+      catchError(this.handleError<User>(`getUser id=${id}`))
     );
   }
-
-  createBusiness(business: Business) : Observable<Business[]> {
-    const url = `${this.dbUrl}/create`
-    console.log(url)
-    return this._http.post<Business[]>(url, business, httpOptions)
-  }
-
+  
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
