@@ -14,12 +14,18 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 // import { LoginComponent } from './login/login.component';
-import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule,MatDialogModule} from  '@angular/material';
+import {MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatRadioModule,MatListModule, MatDialogModule } from  '@angular/material';
 import { LoginComponent } from './login/login.component';
 
 
 
 import { BusinessComponent } from './business/business.component';
+import { ModalboxComponent } from './modalbox/modalbox.component';
+import { ModalboxtextComponent } from './modalboxtext/modalboxtext.component';
+import { ModalboxtwoComponent } from './modalboxtwo/modalboxtwo.component';
+import { ModalboxtexttwoComponent } from './modalboxtexttwo/modalboxtexttwo.component';
+import { ModalboxthreeComponent } from './modalboxthree/modalboxthree.component';
+import { ModalboxtextthreeComponent } from './modalboxtextthree/modalboxtextthree.component';
 import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
 import { CreateBusinessComponent } from './create-business/create-business.component';
@@ -36,7 +42,13 @@ import { CreateBusinessComponent } from './create-business/create-business.compo
     LoginComponent,
     // LoginComponent,    
     BusinessComponent,
-    AdminComponent,
+    ModalboxComponent,
+    ModalboxtextComponent,
+    ModalboxtwoComponent,
+    ModalboxtexttwoComponent,
+    ModalboxthreeComponent,
+    ModalboxtextthreeComponent,
+    // AdminComponent,
     SignupComponent,
     CreateBusinessComponent,
 
@@ -63,11 +75,15 @@ import { CreateBusinessComponent } from './create-business/create-business.compo
     MatInputModule,
     MatListModule,
     MatRadioModule,
-
     MatDialogModule,
-
+    
  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ModalboxComponent,
+    ModalboxtwoComponent,
+    ModalboxthreeComponent
+  ]
 })
 export class AppModule { }
