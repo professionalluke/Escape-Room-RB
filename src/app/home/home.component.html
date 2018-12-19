@@ -36,7 +36,7 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button>History</button>
+              <button mat-button (click)="openModalTwo(aboutrooms)"> History</button>
               <!-- <button mat-button></button> -->
             </mat-card-actions>
         </mat-card>
@@ -56,7 +56,7 @@
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button (click)="openModal('custom-modal-1')">Team</button>
+          <button mat-button (click)="openModal(aboutus)">Team</button>
           <!-- <button mat-button></button> -->
         </mat-card-actions>
     </mat-card>
@@ -78,7 +78,7 @@
         </mat-card-content>
         <mat-card-actions>
           <!-- <button mat-button>Team</button> -->
-          <button mat-button>Contact</button>
+          <button mat-button (click)="openModalThree(admin)">Contact</button>
         </mat-card-actions>
       </mat-card>
 </div>
