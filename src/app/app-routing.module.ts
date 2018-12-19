@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListRoomsComponent } from './list-rooms/list-rooms.component';
-
+import { CreateBusinessComponent } from './create-business/create-business.component';
 import {LoginComponent} from './login/login.component'
-
 import { UserAuthComponent} from './user-auth/user-auth.component'
 import { BusinessComponent } from './business/business.component';
 import { SignupComponent} from './signup/signup.component';
@@ -16,8 +15,9 @@ const routes: Routes = [
   {path: 'business', component: BusinessComponent},
   {path: 'user-auth', component: UserAuthComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'list-rooms/:id', canActivate: [AuthGuard], component: ListRoomsComponent},
+  {path: 'list-rooms/:id', component: ListRoomsComponent},
   {path: 'signup',component: SignupComponent},
+  {path: 'create-business', canActivate: [AuthGuard], component: CreateBusinessComponent},
 ]
 
 @NgModule({
