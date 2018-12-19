@@ -1,10 +1,9 @@
 <body>
-<form class="form1" [formGroup]="createBusiness" (ngSubmit)="onSubmit()">
+  <form class="form1"  [formGroup]="createBusiness" (ngSubmit)="onSubmit()">
   <label for ="nameOfBusiness">Business Name</label>
   <input
     type="text"
     name="nameOfBusiness"
-    [(ngModel)]="nameOfBusiness"
     formControlName="nameOfBusiness"
     required>
   <label for="location">Full Address</label>

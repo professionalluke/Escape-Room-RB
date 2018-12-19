@@ -11,7 +11,7 @@ import { BusinessService } from '../services/business.service'
 })
 export class CreateBusinessComponent implements OnInit {
   createBusiness: FormGroup
-  business : Business[]
+  business: Business[]
   tempBusinessId: number
   createdClick = false
 
@@ -19,26 +19,26 @@ export class CreateBusinessComponent implements OnInit {
 
   ngOnInit() {
     this.createBusiness = this._fb.group({
-     "nameOfBusiness": new FormControl(),
+      "nameOfBusiness": new FormControl(),
       "location": new FormControl(),
       "phone": new FormControl(),
       "hours": new FormControl(),
       "price": new FormControl(),
       "number_of_rooms": new FormControl(),
-     "url": new FormControl(),
+      "url": new FormControl(),
       "themes": new FormControl(),
       "image": new FormControl(),
     })
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.createBusiness.value)
     this._bs.createBusiness(this.createBusiness.value).subscribe(res => {
       console.log(res)
     })
   }
 
-  clickedButton(id){
+  clickedButton(id) {
     this.createdClick = !this.createdClick;
     this.tempBusinessId = id;
   }

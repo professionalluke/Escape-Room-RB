@@ -47,7 +47,7 @@ export class BusinessService {
   createBusiness(business: Business) : Observable<Business[]> {
     const url = `${this.dbUrl}/create`
     console.log(url)
-    return this._http.post<Business[]>(url, business, httpOptions)
+    return this._http.post<Business[]>(url, {business}, httpOptions)
   }
 
   deleteBusiness(id: number) : Observable<Business> {
