@@ -1,0 +1,17 @@
+<html>
+<h1>Escape Rooms</h1>
+<a routerLink="/create-business"><button>Create A Business Page</button></a>
+
+<div class="deck">
+  <div class="cardContainer">
+    <div class="card" *ngFor="let business of business" (click)="onSelect(business)" >
+     
+      <a routerLink="/list-rooms/{{business.id}}">
+      <h2>{{business.name}}</h2><br />
+        <h3>Address: {{business.location}}</h3>
+        <p>Themes: {{business.themes}}</p><br />
+        <img src={{business.image}}></a>
+    </div>
+  </div>
+</div>
+</html>

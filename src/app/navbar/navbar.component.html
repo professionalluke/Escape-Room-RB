@@ -1,0 +1,10 @@
+<nav class="NavBar">
+
+  <img class="logo" src="../assets/logo.png" width="200" height="150" routerLink="/home">
+
+  <a (click)="onLogout()" *ngIf="!isLoggedIn">Logout</a>
+  <a routerLink="/signup" > Sign up/Log in </a>
+  <a routerLink="/business"> Escape Rooms </a> 
+  <a routerLink="/home"> Home </a>
+  
+</nav>

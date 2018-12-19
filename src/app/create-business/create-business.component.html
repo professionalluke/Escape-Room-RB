@@ -1,0 +1,107 @@
+<!-- <form [formGroup] ="createBusiness" (ngSubmit)="onCreateBusiness()">
+  <h1>Create New Business</h1>
+  <mat-dialog-content>
+    <div>
+      <mat-form-field>
+        <input matInput class="inputs" placeholder="nameOfBusiness" formControlName="nameOfBusiness">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="inputs" placeholder="location" forControlName="location" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="phone" forControlName="phone" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="hours" forControlName="hours" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="price" forControlName="price" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="number_of_rooms" forControlName="number_of_rooms" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="url" forControlName="url" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="themes" forControlName="themes" required>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput class="inputs" placeholder="image" forControlName="image" required>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="buttons" mat-button type="button" mat-dialog-close>Cancel</button>
+    <button class="buttons" mat-button cdkFocusInitial type="submit">Create</button>
+  </mat-dialog-actions>
+</form> -->
+
+<form [formGroup] ="createBusiness" (ngSubmit)="onCreateBusiness()">
+  <h1>Create New Business</h1>
+  <!-- <mat-dialog-content> -->
+  <label for ="nameOfBusiness">Business Name</label>
+  <input
+    type="text"
+    name="nameOfBusiness"
+    formControlName="nameOfBusiness"
+    required><br /><br />
+   
+  <label for="location">Full Address</label>
+  <input
+    type="text"
+    name="location"
+    formControlName="location"
+    required><br /><br />
+
+  <label for="phone">Phone Number</label>
+  <input
+    type="text"
+    name="phone"
+    formControlName="phone"
+    required><br /><br />
+
+  <label for="hours">Hours</label>
+  <input
+    type="text"
+    name="hours"
+    formControlName="hours"
+    required><br /><br />
+
+  <label for="price">Average Price</label>
+  <input
+    type="text"
+    name="price"
+    formControlName="price"><br /><br />
+
+  <label for="number_of_rooms">Number of Rooms</label>
+  <input
+    type="text"
+    name="number_of_rooms"
+    formControlName="number_of_rooms"><br /><br />
+
+  <label for="url">URL</label>
+  <input
+    type="text"
+    name="url"
+    formControlName="url"
+    required><br /><br />
+
+  <label for="themes">Available Themes</label>
+  <input  
+    type="text"
+    name="themes"
+    formControlName="themes"
+    required><br /><br />
+
+  <label for="image">Image</label>
+  <input
+    type="text"
+    name="image"
+    formControlName="image"
+    required><br /><br />
+  <!-- </mat-dialog-content>
+  <mat-dialog-actions> -->
+    <button type="submit">Submit</button>
+  <!-- </mat-dialog-actions> -->
+</form>

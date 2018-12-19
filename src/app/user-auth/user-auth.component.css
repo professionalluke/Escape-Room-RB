@@ -1,0 +1,32 @@
+.my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    background: rgb(179, 179, 179);
+    color: #385589;
+  }
+   
+  .full-width {
+    width: 100%;
+  }
+
+  /* @media (min-width: 320px) and (max-width: 480px) { */
+  .my-card
+  {
+    margin-top: 10em;
+    margin-left: 12em;
+    float: left;
+    transform: translate(90%);
+    background: rgb(179, 179, 179);
+    min-width: 500px;
+  
+  }
+  /* } */
+  body{
+    background: url(../../assets/bricks.jpg) no-repeat center;
+    background-size: 100% 100%;
+    background-position: top center;
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+}

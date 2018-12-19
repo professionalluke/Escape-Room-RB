@@ -1,0 +1,53 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+h1 {
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  /* display: inline-block; */
+  background-color: #385589;
+  border-radius: 4px;
+  margin: .3em;
+  float: right;
+  font-size: 2em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav a:visited, a:link {
+  color: rgb(179, 179, 179);
+}
+
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+
+nav a.active {
+  color: #039be5;
+}
+
+nav {
+  background-color:#385589;
+  height: 10em;
+  padding: 0.5em;
+  margin-top:-0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+body{
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
