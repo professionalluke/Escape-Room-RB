@@ -34,11 +34,3 @@
 //       image: new FormControl(),
 //     });
 //   }
-
-//   onSubmit() {
-//     this._bs.updateBusiness(this.businessEditForm.value).subscribe((updateBusiness) => {
-//       console.log(updateBusiness)
-//       location.reload()
-//     })
-//   }
-// }
