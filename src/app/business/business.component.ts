@@ -11,6 +11,9 @@ export class BusinessComponent implements OnInit {
 
   business: Business[];
   selectedBusiness: Business;
+  tempBusinessId: number
+  createdClick = false
+
   constructor(private businessService: BusinessService) { }
 
   ngOnInit() {
@@ -23,6 +26,11 @@ export class BusinessComponent implements OnInit {
   }
 
   
+  // clickedButton(id) {
+  //   this.createdClick = !this.createdClick;
+  //   this.tempBusinessId = id;
+  // }
+
   onSelect(business: Business): void {
     this.selectedBusiness = business;
   }

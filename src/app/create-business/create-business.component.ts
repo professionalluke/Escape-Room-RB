@@ -19,7 +19,7 @@ export class CreateBusinessComponent implements OnInit {
 
   ngOnInit() {
     this.createBusiness = this._fb.group({
-      nameOfBusiness: new FormControl(),
+      name: new FormControl(),
       location: new FormControl(),
       phone: new FormControl(),
       hours: new FormControl(),

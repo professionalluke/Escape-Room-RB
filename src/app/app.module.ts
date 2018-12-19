@@ -24,6 +24,7 @@ import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
 import { CreateBusinessComponent } from './create-business/create-business.component';
 import { AuthGuard } from '../app/guards/auth.guard';
+// import { UpdateBusinessComponent } from './update-business/update-business.component';
 
 
 
@@ -44,6 +45,7 @@ import { AuthGuard } from '../app/guards/auth.guard';
     AdminComponent,
     SignupComponent,
     CreateBusinessComponent,
+    // UpdateBusinessComponent,
 
   ],
   imports: [

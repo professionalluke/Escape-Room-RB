@@ -47,7 +47,7 @@ export class BusinessService {
   createBusiness(business: Business) : Observable<Business[]> {
     const url = `${this.dbUrl}/create`
     console.log(url)
-    return this._http.post<Business[]>(url, {business}, httpOptions)
+    return this._http.post<Business[]>(url, business, httpOptions)
   }
 
   deleteBusiness(id: number) : Observable<Business> {
@@ -56,6 +56,11 @@ export class BusinessService {
       tap(_ => this.log(`deleted business id=${id}`)),
       catchError(this.handleError<Business>('deleteBusiness'))
     );
+  }
+
+  updateBusiness(editFormDetails) : Observable<Business> {
+    let updateUrl = `${this.dbUrl}/update/${editFormDetails.id}`
+    return this._http.put<Business>(`${updateUrl}`, editFormDetails, httpOptions);
   }
 
   private handleError<T> (operation = 'operation', result?: T) {
