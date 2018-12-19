@@ -2,7 +2,7 @@ export let APIURL = '';
 
 switch (window.location.hostname) {
     // this is the deployed angular application
-    case 'escapeplan-server.heroku.com':
+    case 'https://red-badge-escapeplan.herokuapp.com/':
         // this is the full url of your deployed API
         APIURL = 'https://escapeplan-server.herokuapp.com'
         break;
