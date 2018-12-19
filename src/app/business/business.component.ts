@@ -13,6 +13,7 @@ export class BusinessComponent implements OnInit {
   selectedBusiness: Business;
   tempBusinessId: number
   createdClick = false
+  update = false
 
   constructor(private businessService: BusinessService) { }
 
@@ -25,6 +26,10 @@ export class BusinessComponent implements OnInit {
       .subscribe(businesses => {this.business = businesses, console.log(businesses)});
   }
 
+  setUpdate(): void {
+    this.update = true;
+    console.log("hello?")
+  }
   
   // clickedButton(id) {
   //   this.createdClick = !this.createdClick;

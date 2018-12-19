@@ -1,51 +1,49 @@
-<!-- <h1>Update a Deal</h1>
+<h1>Update a Business</h1>
 <hr>
 
 <mat-card style="text-align: center;">
   <div class="example-container">
     <mat-card-content>
-      <form [formGroup]="businessEditForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="businessEditForm" (ngSubmit)="onSubmit(businessEditForm)">
         <mat-form-field>
-          <input matInput placeholder="Title" type="text" formControlName="nameOfBusiness">
+          <input matInput placeholder="Title" type="text" formControlName="name">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="location">
+          <input matInput placeholder="Update your location" type="text" formControlName="location">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="phone">
+          <input matInput placeholder="Update the number for contact" type="text" formControlName="phone">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="hours">
+          <input matInput placeholder="Update your hours" type="text" formControlName="hours">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="price">
+          <input matInput placeholder="update the price" type="number" formControlName="price">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="number_of_rooms">
+          <input matInput placeholder="update amount of rooms at the location" type="number" formControlName="number_of_rooms">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="url">
+          <input matInput placeholder="change your url for your site" type="text" formControlName="url">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="themes">
+          <input matInput placeholder="update the room themes" type="text" formControlName="themes">
         </mat-form-field>
         <br>
         <mat-form-field>
-          <input matInput placeholder="Update your deal!" formControlName="image">
+          <input matInput placeholder="change your image url" type="text" formControlName="image">
         </mat-form-field>
         <br>
-        <button mat-raised-button color="primary" type="submit">Update Deal</button>
+        <button mat-raised-button color="primary" type="submit">Update Business</button>
       </form>
     </mat-card-content>
   </div>
 </mat-card>
 
-
-<a mat-button routerLink="/deal">Back to Deals</a> -->

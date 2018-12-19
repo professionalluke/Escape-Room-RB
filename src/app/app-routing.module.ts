@@ -8,6 +8,7 @@ import { UserAuthComponent} from './user-auth/user-auth.component'
 import { BusinessComponent } from './business/business.component';
 import { SignupComponent} from './signup/signup.component';
 import { AuthGuard } from './guards/auth.guard';
+import { UpdateBusinessComponent } from './update-business/update-business.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'list-rooms/:id', component: ListRoomsComponent},
   {path: 'signup',component: SignupComponent},
   {path: 'create-business', canActivate: [AuthGuard], component: CreateBusinessComponent},
+  {path: 'update-business', canActivate: [AuthGuard], component: UpdateBusinessComponent},
 ]
 
 @NgModule({

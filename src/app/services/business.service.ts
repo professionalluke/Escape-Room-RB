@@ -59,6 +59,7 @@ export class BusinessService {
   }
 
   updateBusiness(editFormDetails) : Observable<Business> {
+    console.log(editFormDetails);
     let updateUrl = `${this.dbUrl}/update/${editFormDetails.id}`
     return this._http.put<Business>(`${updateUrl}`, editFormDetails, httpOptions);
   }

@@ -11,8 +11,11 @@
         <p>Themes: {{business.themes}}</p><br />
         <img src={{business.image}}></a>
         <button (click)="onDeleteBusiness(business.id)">Delete this</button>
+        <!-- <a routerLink="/update-business"><button>Update</button></a> -->
+        <button (click)="setUpdate()">Update</button>
+      <div *ngIf="update"><app-update-business [business]="business"></app-update-business></div>
     </div>
-  </div>
+  </div> 
 </div>
-<!-- <app-update-business></app-update-business> -->
+
 </html>
