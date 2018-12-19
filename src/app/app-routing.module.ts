@@ -8,6 +8,7 @@ import {LoginComponent} from './login/login.component'
 import { UserAuthComponent} from './user-auth/user-auth.component'
 import { BusinessComponent } from './business/business.component';
 import { SignupComponent} from './signup/signup.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path: 'business', component: BusinessComponent},
   {path: 'user-auth', component: UserAuthComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'list-rooms/:id', component: ListRoomsComponent},
+  {path: 'list-rooms/:id', canActivate: [AuthGuard], component: ListRoomsComponent},
   {path: 'signup',component: SignupComponent},
 ]
 
