@@ -50,6 +50,14 @@ export class BusinessService {
     return this._http.post<Business[]>(url, business, httpOptions)
   }
 
+  deleteBusiness(id: number) : Observable<Business> {
+    const url = `${this.dbUrl}/delete/${id}`;
+    return this._http.delete<Business>(url, httpOptions).pipe(
+      tap(_ => this.log(`deleted business id=${id}`)),
+      catchError(this.handleError<Business>('deleteBusiness'))
+    );
+  }
+
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 

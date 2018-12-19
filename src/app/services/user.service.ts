@@ -50,10 +50,16 @@ export class UserService {
         }));
     }
     login(username, password, email){
-        return this.http.post<any>(`https://escapeplan-server.herokuapp.com/user/login`, {user: {username,password, email} })
+        let UserToServer = {
+            username,
+            password,
+            email
+        }
+        return this.http.post<any>(`https://escapeplan-server.herokuapp.com/user/login`, UserToServer)
         .pipe(map(user=>{
             if(user && user) {
                 localStorage.setItem('token', user.sessionToken);
+                console.log('got it!')
             }
             return user;
         }));
