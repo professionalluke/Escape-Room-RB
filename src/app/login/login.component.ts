@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
   username:string;
   email:string;
   password:string;
+  role: string;
 
   constructor(private router: Router, private userservice: UserService, private http: HttpClient) { }
 
@@ -33,7 +34,7 @@ export class LoginComponent implements OnInit {
         this.error = error;
       }
     )
-    
+
   }
    
     }
