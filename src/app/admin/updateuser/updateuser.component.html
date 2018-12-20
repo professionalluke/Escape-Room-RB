@@ -1,0 +1,22 @@
+<h1>Update a User</h1>
+<hr>
+
+<mat-card style="text-align: center;">
+  <div class="example-container">
+    <mat-card-content>
+      <form [formGroup]="userEditForm" (ngSubmit)="onSubmit(userEditForm)">
+        <mat-form-field>
+          <input matInput placeholder="Title" type="text" formControlName="username">
+        </mat-form-field>
+        <br>
+      
+        <mat-form-field>
+          <input matInput placeholder="Update the number for contact" type="text" formControlName="role">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" type="submit">Update user</button>
+      </form>
+    </mat-card-content>
+  </div>
+</mat-card>
+

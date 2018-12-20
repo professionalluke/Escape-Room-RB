@@ -48,6 +48,7 @@ import { AdminportalComponent } from './admin/adminportal/adminportal.component'
 import { AdminService } from './admin/admin.service';
 import { BusinessService } from './services/business.service';
 import { UserService } from './services/user.service';
+import { UpdateuserComponent } from './admin/updateuser/updateuser.component';
 
 
 
@@ -69,6 +70,7 @@ import { UserService } from './services/user.service';
     CreateBusinessComponent,
     UpdateBusinessComponent,
     AdminportalComponent,
+    UpdateuserComponent,
 
   ],
   imports: [

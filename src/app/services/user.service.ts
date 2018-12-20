@@ -7,7 +7,8 @@ import { APIURL } from '../../environments/environment.prod';
 
 const httpOptions = {
     headers: new HttpHeaders({
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+      
     })
 }
 
@@ -31,6 +32,10 @@ export class UserService {
         
     }
 
+    getUserRole(){
+        console.log(this.currentUser)
+    }
+
     signup(username, password, email){
         console.log('you hit this one')
         let UserToServer = {
@@ -43,7 +48,7 @@ export class UserService {
         return this.http.post<any>(`${APIURL}/user/create`,UserToServer)
         .pipe(map(user=>{
             if(user && user) {
-                localStorage.setItem('token', user.sessionToken);
+                sessionStorage.setItem('token', user.sessionToken);
                 console.log('you hit this')
             }
             return user;
@@ -57,9 +62,14 @@ export class UserService {
         }
         return this.http.post<any>(`${APIURL}/user/login`, UserToServer)
         .pipe(map(user=>{
+            if (user.user.role == 'admin') {
+                localStorage.setItem('role', user.user.role)
+                localStorage.setItem('currentUser', user.sessionToken);
+                 return user
+            }
+
             if(user && user) {
-                localStorage.setItem('token', user.sessionToken);
-                // localStorage.setItem('role', user.role.value);
+                localStorage.setItem('currentUser', user.sessionToken);
                 console.log('got it!')
                 console.log(user.role.value)
             }
