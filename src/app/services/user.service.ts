@@ -40,7 +40,7 @@ export class UserService {
             email
         // }
     }
-        return this.http.post<any>(`https://escapeplan-server.herokuapp.com/user/create`,  UserToServer)
+        return this.http.post<any>(`${APIURL}/user/create`,UserToServer)
         .pipe(map(user=>{
             if(user && user) {
                 localStorage.setItem('token', user.sessionToken);
@@ -49,17 +49,19 @@ export class UserService {
             return user;
         }));
     }
-    login(username, password, email){
+    login(username, password, role){
         let UserToServer = {
             username,
             password,
-            email
+            role,
         }
-        return this.http.post<any>(`https://escapeplan-server.herokuapp.com/user/login`, UserToServer)
+        return this.http.post<any>(`${APIURL}/user/login`, UserToServer)
         .pipe(map(user=>{
             if(user && user) {
                 localStorage.setItem('token', user.sessionToken);
+                // localStorage.setItem('role', user.role.value);
                 console.log('got it!')
+                console.log(user.role.value)
             }
             return user;
         }));

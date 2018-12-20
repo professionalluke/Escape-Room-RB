@@ -14,6 +14,9 @@ import { User } from '../models/user';
 export class SignupComponent {
   user: User;
   error = '';
+  username:string;
+  email:string;
+  password:string;
 
   constructor(private router: Router, private userservice: UserService, private http: HttpClient) { }
 

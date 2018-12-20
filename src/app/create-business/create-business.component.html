@@ -1,74 +1,68 @@
-<form [formGroup] ="createBusiness" (ngSubmit)="onCreateBusiness()">
-  <label for ="nameOfBusiness">Business Name</label>
+<form [formGroup] ="createBusiness" (ngSubmit)="onSubmit()">
+  <h1>Create New Business</h1>
+  <!-- <mat-dialog-content> -->
+  <label for ="name">Business Name</label>
   <input
     type="text"
-    name="nameOfBusiness"
-    formControlName="nameOfBusiness"
-    required>
-
+    name="name"
+    formControlName="name"
+    required><br /><br />
+   
   <label for="location">Full Address</label>
   <input
     type="text"
     name="location"
     formControlName="location"
-    required>
+    required><br /><br />
 
   <label for="phone">Phone Number</label>
   <input
     type="text"
     name="phone"
     formControlName="phone"
-    required>
+    required><br /><br />
 
   <label for="hours">Hours</label>
   <input
     type="text"
     name="hours"
     formControlName="hours"
-    required>
+    required><br /><br />
 
   <label for="price">Average Price</label>
-  <input 
-    type="text"
+  <input
+    type="number"
     name="price"
-    formControlName="price">
+    formControlName="price"><br /><br />
 
   <label for="number_of_rooms">Number of Rooms</label>
   <input
-    type="text"
+    type="number"
     name="number_of_rooms"
-    formControlName="number_of_rooms">
+    formControlName="number_of_rooms"><br /><br />
 
   <label for="url">URL</label>
   <input
     type="text"
     name="url"
     formControlName="url"
-    required>
+    required><br /><br />
 
   <label for="themes">Available Themes</label>
   <input  
     type="text"
     name="themes"
     formControlName="themes"
-    required>
+    required><br /><br />
 
   <label for="image">Image</label>
   <input
     type="text"
     name="image"
     formControlName="image"
-    required>
-
-  <button type="submit"></button>
-
+    required><br /><br />
+  <!-- </mat-dialog-content>
+  <mat-dialog-actions> -->
+    <button type="submit">Submit</button>
+  <!-- </mat-dialog-actions> -->
 </form>
-
-
-phone
-hours
-price
-number of rooms
-url
-themes
-image
