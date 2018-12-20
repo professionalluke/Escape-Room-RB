@@ -43,5 +43,6 @@ export class BusinessComponent implements OnInit {
     this.businessService.deleteBusiness(id).subscribe(res => {
       console.log('Deleted');
     });
+    location.reload();
   }
 }

@@ -23,7 +23,8 @@ export class AppComponent {
   title = 'Escape plan';
 
   logout() {
-    localStorage.removeItem('token');
+    localStorage.clear();
+    sessionStorage.clear();
     
   }
 

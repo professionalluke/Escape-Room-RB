@@ -44,6 +44,7 @@ setUpdate(): void {
   deleteUser(id){
     if (localStorage.getItem('role') == 'admin'){
       this._adminService.deleteUsers(id).subscribe((res: any) => {console.log(res)})
+      location.reload();
     }
     else {
       alert('Cannot delete item.')

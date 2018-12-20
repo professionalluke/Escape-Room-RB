@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'signup',component: SignupComponent},
   {path: 'create-business', canActivate: [AuthGuard], component: CreateBusinessComponent},
   {path: 'update-business', canActivate: [AuthGuard], component: UpdateBusinessComponent},
-  {path: 'adminportal', component: AdminportalComponent },
+  {path: 'adminportal', canActivate: [AuthGuard], component: AdminportalComponent },
 ]
 
 @NgModule({

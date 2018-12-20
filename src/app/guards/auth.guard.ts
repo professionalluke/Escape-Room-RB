@@ -9,7 +9,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): Observable<boolean> {
     return new Observable<boolean>((observer) => {
-      if (!localStorage.getItem('token')) {
+      if (!localStorage.getItem('currentUser')) {
         this.router.navigate(['/signup']);
         return observer.next(false);
       } else {
